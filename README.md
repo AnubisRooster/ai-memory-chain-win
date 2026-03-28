@@ -365,3 +365,4 @@ ai-memory-chain-win/
 ## Additional Documentation
 
 - **[docs/creation-process.md](docs/creation-process.md)** — Full analysis of macOS-specific code, design decisions, implementation details, and testing strategy for the Windows port.
+70dc64e07a1dcc51f519276511286508f672c6fdc3e829de0673cd4f58ee8344
