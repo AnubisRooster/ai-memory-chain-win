@@ -1,7 +1,8 @@
-# Graph Report - ai-memory-chain-win  (2026-09-06)
+# Graph Report - ai-memory-chain-win  (2026-09-07)
 
 ## Corpus Check
-- Corpus is ~38,368 words - fits in a single context window. You may not need a graph.
+- 85 files · ~101,313 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
 - 511 nodes · 835 edges · 25 communities (16 shown, 4 thin omitted)
