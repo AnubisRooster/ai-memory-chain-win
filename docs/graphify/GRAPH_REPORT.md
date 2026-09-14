@@ -1,11 +1,12 @@
-# Graph Report - ai-memory-chain-win  (2026-09-07)
+# Graph Report - ai-memory-chain-win  (2026-09-14)
 
 ## Corpus Check
-- 85 files · ~101,313 words
+- 85 files · ~101,312 words
 - Verdict: corpus is large enough that graph structure adds value.
+- Unclassified: 6 file(s) not represented in the graph (top: (none) 3, .sol 1, .jsonl 1)
 
 ## Summary
-- 511 nodes · 835 edges · 25 communities (16 shown, 4 thin omitted)
+- 511 nodes · 844 edges · 25 communities (16 shown, 4 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 5 edges (avg confidence: 0.82)
 - Token cost: 0 input · 0 output
 
@@ -46,14 +47,14 @@
 ## Surprising Connections (you probably didn't know these)
 - `MemoryTimeline` --indirect_call--> `load()`  [INFERRED]
   frontend/src/components/MemoryTimeline.tsx → frontend/src/components/MemoryDetail.tsx
+- `poll()` --calls--> `getHealth()`  [EXTRACTED]
+  frontend/src/components/NetworkStatus.tsx → frontend/src/lib/api.ts
 - `server` --calls--> `getLanAddresses()`  [EXTRACTED]
   backend/src/index.ts → backend/src/app.ts
 - `shutdown()` --calls--> `closeDB()`  [EXTRACTED]
   backend/src/index.ts → backend/src/services/audit-log.ts
 - `AuditEntry` --references--> `SecurityThreat`  [EXTRACTED]
   backend/src/services/audit-log.ts → backend/src/services/security.ts
-- `BlockchainExplorer()` --calls--> `searchMemories()`  [EXTRACTED]
-  frontend/src/components/BlockchainExplorer.tsx → frontend/src/lib/api.ts
 
 ## Import Cycles
 - None detected.
@@ -66,11 +67,11 @@ Nodes (57): BlockchainExplorer(), BlockchainExplorerProps, formatTime(), MEMORY_
 
 ### Community 1 - "platform.ts"
 Cohesion: 0.11
-Nodes (41): installLinuxSystemd(), installMacOSLaunchAgent(), installWindowsTaskScheduler(), main(), platform, projectDir, ensureDir(), isSourceNewer() (+33 more)
+Nodes (42): installLinuxSystemd(), installMacOSLaunchAgent(), installWindowsTaskScheduler(), main(), platform, projectDir, ensureDir(), isSourceNewer() (+34 more)
 
 ### Community 2 - "security.ts"
-Cohesion: 0.07
-Nodes (40): createApp(), getLanAddresses(), app, PORT, server, shutdown(), router, router (+32 more)
+Cohesion: 0.06
+Nodes (41): createApp(), getLanAddresses(), app, PORT, server, shutdown(), router, router (+33 more)
 
 ### Community 3 - "package.json"
 Cohesion: 0.04
@@ -81,8 +82,8 @@ Cohesion: 0.05
 Nodes (41): dependencies, better-sqlite3, cors, ethers, express, morgan, multer, devDependencies (+33 more)
 
 ### Community 5 - "memory.ts"
-Cohesion: 0.10
-Nodes (31): upload, router, ABI, getContract(), getContractAddress(), getMemoryCount(), getMemoryOnChain(), getMemorySummaryOnChain() (+23 more)
+Cohesion: 0.11
+Nodes (31): upload, deepSearchObject(), ABI, getContract(), getContractAddress(), getMemoryCount(), getMemoryOnChain(), getMemorySummaryOnChain() (+23 more)
 
 ### Community 6 - "frontend/package.json"
 Cohesion: 0.06
@@ -113,7 +114,7 @@ Cohesion: 0.12
 Nodes (15): compilerOptions, declaration, esModuleInterop, forceConsistentCasingInFileNames, lib, module, outDir, resolveJsonModule (+7 more)
 
 ### Community 13 - "MemoryAgent"
-Cohesion: 0.20
+Cohesion: 0.21
 Nodes (4): AgentSDKOptions, MemoryAgent, RecordMemoryInput, RecordMemoryResult
 
 ### Community 14 - "genesis.ts"
@@ -126,7 +127,7 @@ Nodes (3): Stop-ProcessOnPort(), Wait-ForUrl(), Write-Log()
 
 ## Knowledge Gaps
 - **237 isolated node(s):** `name`, `version`, `private`, `main`, `types` (+232 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 275 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 273 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
@@ -141,8 +142,8 @@ _Questions this graph is uniquely positioned to answer:_
 - **What connects `name`, `version`, `private` to the rest of the system?**
   _237 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `api.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.05017543859649123 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.051228070175438595 - nodes in this community are weakly interconnected._
 - **Should `platform.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.1057945566286216 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.10667251975417033 - nodes in this community are weakly interconnected._
 - **Should `security.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.06561085972850679 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06458635703918723 - nodes in this community are weakly interconnected._

@@ -3467,6 +3467,17 @@
       "source_location": "L24"
     },
     {
+      "id": "backend_src_routes_search_router",
+      "label": "router",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "security.ts",
+      "file_type": "code",
+      "norm_label": "router",
+      "source_file": "backend/src/routes/search.ts",
+      "source_location": "L9"
+    },
+    {
       "id": "backend_src_services_audit_log",
       "label": "audit-log.ts",
       "_origin": "ast",
@@ -4773,17 +4784,6 @@
       "source_location": "L1"
     },
     {
-      "id": "backend_src_routes_search_router",
-      "label": "router",
-      "_origin": "ast",
-      "community": 5,
-      "community_name": "memory.ts",
-      "file_type": "code",
-      "norm_label": "router",
-      "source_file": "backend/src/routes/search.ts",
-      "source_location": "L9"
-    },
-    {
       "id": "backend_src_services_blockchain",
       "label": "blockchain.ts",
       "_origin": "ast",
@@ -5936,6 +5936,18 @@
       "weight": 1.0
     },
     {
+      "source": "agent_sdk_src_index_memoryagent_request",
+      "target": "agent_sdk_src_index_memoryagent_request",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "agent-sdk/src/index.ts",
+      "source_location": "L80",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_app_createapp",
       "target": "backend_src_app_getlanaddresses",
       "relation": "calls",
@@ -5969,6 +5981,18 @@
       "context": "call",
       "source_file": "backend/src/index.ts",
       "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_routes_search_deepsearchobject",
+      "target": "backend_src_routes_search_deepsearchobject",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "backend/src/routes/search.ts",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -6041,6 +6065,18 @@
       "context": "call",
       "source_file": "backend/src/services/blockchain.ts",
       "source_location": "L117",
+      "weight": 1.0
+    },
+    {
+      "source": "backend_src_services_blockchain_getmemorycount",
+      "target": "backend_src_services_blockchain_getmemorycount",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "backend/src/services/blockchain.ts",
+      "source_location": "L118",
       "weight": 1.0
     },
     {
@@ -6188,6 +6224,18 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_services_security_scandataobject",
+      "target": "backend_src_services_security_scandataobject",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "backend/src/services/security.ts",
+      "source_location": "L230",
+      "weight": 1.0
+    },
+    {
       "source": "backend_src_services_security_scanmemoryinput",
       "target": "backend_src_services_security_scantext",
       "relation": "calls",
@@ -6261,6 +6309,18 @@
     },
     {
       "source": "frontend_src_components_creatememory_creatememory",
+      "target": "frontend_src_lib_api_creatememory",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "frontend/src/components/CreateMemory.tsx",
+      "source_location": "L127",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_creatememory_creatememory",
       "target": "frontend_src_components_creatememory_formatbytes",
       "relation": "calls",
       "_origin": "ast",
@@ -6293,6 +6353,18 @@
       "context": "call",
       "source_file": "frontend/src/components/MemoryDetail.tsx",
       "source_location": "L76",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_memorydetail_memorydetail",
+      "target": "frontend_src_lib_api_getmemory",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "frontend/src/components/MemoryDetail.tsx",
+      "source_location": "L107",
       "weight": 1.0
     },
     {
@@ -6353,6 +6425,18 @@
       "context": "call",
       "source_file": "frontend/src/components/MemoryTimeline.tsx",
       "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "frontend_src_components_networkstatus_networkstatus",
+      "target": "frontend_src_lib_api_gethealth",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "frontend/src/components/NetworkStatus.tsx",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -6560,6 +6644,18 @@
       "weight": 1.0
     },
     {
+      "source": "scripts_lib_config_issourcenewer_checkdir",
+      "target": "scripts_lib_config_issourcenewer_checkdir",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "scripts/lib/config.ts",
+      "source_location": "L77",
+      "weight": 1.0
+    },
+    {
       "source": "scripts_lib_config_loadprojectconfig",
       "target": "scripts_lib_platform_getprojectdir",
       "relation": "calls",
@@ -6677,6 +6773,18 @@
       "context": "call",
       "source_file": "scripts/lib/logger.ts",
       "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_lib_logger_logger_log",
+      "target": "scripts_lib_logger_logger_log",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "scripts/lib/logger.ts",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -15495,5 +15603,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "36e3b078ee18ddf7efb4f93ab1ed8876fd86256c"
+  "built_at_commit": "3f7ba184336f0493b9fc3a9e8e75ead5ac83cd3b"
 }
