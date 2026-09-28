@@ -1,12 +1,12 @@
-# Graph Report - ai-memory-chain-win  (2026-09-21)
+# Graph Report - ai-memory-chain-win  (2026-09-28)
 
 ## Corpus Check
-- 85 files · ~101,688 words
+- 86 files · ~107,148 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 6 file(s) not represented in the graph (top: (none) 3, .sol 1, .jsonl 1)
+- Unclassified: 5 file(s) not represented in the graph (top: (none) 3, .jsonl 1, .css 1)
 
 ## Summary
-- 533 nodes · 944 edges · 24 communities (18 shown, 6 thin omitted)
+- 533 nodes · 958 edges · 23 communities (17 shown, 6 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 5 edges (avg confidence: 0.82)
 - Token cost: 0 input · 0 output
 
@@ -14,10 +14,10 @@
 - api.ts
 - lifecycle.test.ts
 - audit-log.ts
+- package.json
 - memory.ts
 - backend/package.json
 - frontend/package.json
-- package.json
 - agent-sdk/package.json
 - scripts
 - compilerOptions
@@ -26,7 +26,6 @@
 - compilerOptions
 - compilerOptions
 - graphify_pipeline.py
-- devDependencies
 - genesis.ts
 - startup.ps1
 - next.config.js
@@ -60,11 +59,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (24 total, 6 thin omitted)
+## Communities (23 total, 6 thin omitted)
 
 ### Community 0 - "api.ts"
-Cohesion: 0.05
-Nodes (57): BlockchainExplorer(), BlockchainExplorerProps, formatTime(), MEMORY_TYPES, ResultCard(), TabId, truncate(), ConnectInfo() (+49 more)
+Cohesion: 0.06
+Nodes (62): Home(), BlockchainExplorer(), BlockchainExplorerProps, formatTime(), MEMORY_TYPES, ResultCard(), TabId, truncate() (+54 more)
 
 ### Community 1 - "lifecycle.test.ts"
 Cohesion: 0.11
@@ -74,21 +73,21 @@ Nodes (48): ref_child_process, ref_fs, ref_http, ref_os, ref_path, ref_vitest, i
 Cohesion: 0.07
 Nodes (40): createApp(), getLanAddresses(), app, PORT, server, shutdown(), router, router (+32 more)
 
-### Community 3 - "memory.ts"
+### Community 3 - "package.json"
+Cohesion: 0.04
+Nodes (43): config, dependencies, ethers, description, devDependencies, concurrently, eslint, hardhat (+35 more)
+
+### Community 4 - "memory.ts"
 Cohesion: 0.09
 Nodes (34): upload, deepSearchObject(), router, ABI, getContract(), getContractAddress(), getMemoryCount(), getMemoryOnChain() (+26 more)
 
-### Community 4 - "backend/package.json"
+### Community 5 - "backend/package.json"
 Cohesion: 0.05
 Nodes (41): dependencies, better-sqlite3, cors, ethers, express, morgan, multer, devDependencies (+33 more)
 
-### Community 5 - "frontend/package.json"
+### Community 6 - "frontend/package.json"
 Cohesion: 0.06
 Nodes (31): dependencies, next, react, react-dom, devDependencies, autoprefixer, postcss, tailwindcss (+23 more)
-
-### Community 6 - "package.json"
-Cohesion: 0.07
-Nodes (28): config, dependencies, ethers, description, engines, node, pnpm, ethers (+20 more)
 
 ### Community 7 - "agent-sdk/package.json"
 Cohesion: 0.10
@@ -122,21 +121,17 @@ Nodes (15): compilerOptions, declaration, esModuleInterop, forceConsistentCasing
 Cohesion: 0.13
 Nodes (13): graphify_analyze, graphify_build, graphify_cluster, graphify_detect, graphify_export, graphify_extract, graphify_llm, graphify_report (+5 more)
 
-### Community 15 - "devDependencies"
-Cohesion: 0.13
-Nodes (15): devDependencies, concurrently, eslint, hardhat, @nomicfoundation/hardhat-toolbox, prettier, prettier-plugin-solidity, ts-node (+7 more)
-
-### Community 16 - "genesis.ts"
+### Community 15 - "genesis.ts"
 Cohesion: 0.40
 Nodes (5): DATA_DIR, GENESIS_PATH, main(), NODE_DIR, run()
 
-### Community 17 - "startup.ps1"
+### Community 16 - "startup.ps1"
 Cohesion: 0.83
 Nodes (3): Stop-ProcessOnPort(), Wait-ForUrl(), Write-Log()
 
 ## Knowledge Gaps
 - **237 isolated node(s):** `name`, `version`, `private`, `main`, `types` (+232 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 286 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+  These have ≤1 connection - possible missing edges. (Counts symbols only; 281 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
@@ -153,6 +148,6 @@ _Questions this graph is uniquely positioned to answer:_
 - **What connects `name`, `version`, `private` to the rest of the system?**
   _237 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `api.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.051228070175438595 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.056140350877192984 - nodes in this community are weakly interconnected._
 - **Should `lifecycle.test.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.10596491228070175 - nodes in this community are weakly interconnected._
