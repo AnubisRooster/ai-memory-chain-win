@@ -17170,12 +17170,24 @@
       "weight": 1.0
     },
     {
+      "source": "backend_src_services_audit_log_queryauditlog",
+      "target": "backend_src_services_audit_log_rowtoentry",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "argument",
+      "source_file": "backend/src/services/audit-log.ts",
+      "source_location": "L151",
+      "weight": 1.0
+    },
+    {
       "source": "scripts_shutdown_main",
       "target": "scripts_lib_logger_logger_log",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "INFERRED",
-      "confidence_score": 0.8,
+      "confidence_score": 0.85,
       "context": "call",
       "source_file": "scripts/shutdown.ts",
       "source_location": "L11",
@@ -17187,7 +17199,7 @@
       "relation": "calls",
       "_origin": "ast",
       "confidence": "INFERRED",
-      "confidence_score": 0.8,
+      "confidence_score": 0.85,
       "context": "call",
       "source_file": "scripts/startup.ts",
       "source_location": "L32",
@@ -17199,22 +17211,10 @@
       "relation": "calls",
       "_origin": "ast",
       "confidence": "INFERRED",
-      "confidence_score": 0.8,
+      "confidence_score": 0.85,
       "context": "call",
       "source_file": "scripts/startup.ts",
       "source_location": "L51",
-      "weight": 1.0
-    },
-    {
-      "source": "backend_src_services_audit_log_queryauditlog",
-      "target": "backend_src_services_audit_log_rowtoentry",
-      "relation": "indirect_call",
-      "_origin": "ast",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "context": "argument",
-      "source_file": "backend/src/services/audit-log.ts",
-      "source_location": "L151",
       "weight": 1.0
     },
     {
@@ -17231,5 +17231,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c40ae1f8022ec4afd24d782a79e9dc54fb1685c9"
+  "built_at_commit": "12f7aaefd6fb9efe8dd57f9993076589607c5648"
 }
