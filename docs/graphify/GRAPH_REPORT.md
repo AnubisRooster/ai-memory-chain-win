@@ -1,7 +1,7 @@
-# Graph Report - ai-memory-chain-win  (2026-10-05)
+# Graph Report - ai-memory-chain-win  (2026-10-12)
 
 ## Corpus Check
-- 86 files · ~107,676 words
+- 86 files · ~107,698 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 5 file(s) not represented in the graph (top: (none) 3, .jsonl 1, .css 1)
 
@@ -124,7 +124,7 @@ Cohesion: 0.83
 Nodes (3): Stop-ProcessOnPort(), Wait-ForUrl(), Write-Log()
 
 ## Knowledge Gaps
-- **237 isolated node(s):** `name`, `version`, `private`, `main`, `types` (+232 more)
+- **34 isolated node(s):** `@types/node`, `ts-node`, `typescript`, `vitest`, `ethers` (+29 more)
   These have ≤1 connection - possible missing edges. (Counts symbols only; 281 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -135,8 +135,8 @@ _Questions this graph is uniquely positioned to answer:_
   _High betweenness centrality (0.112) - this node is a cross-community bridge._
 - **Are the 2 inferred relationships involving `main()` (e.g. with `.log()` and `.rotateLogs()`) actually correct?**
   _`main()` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `name`, `version`, `private` to the rest of the system?**
-  _237 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `@types/node`, `ts-node`, `typescript` to the rest of the system?**
+  _34 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `api.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.056140350877192984 - nodes in this community are weakly interconnected._
 - **Why does `scripts` connect `scripts` to `package.json`?**
